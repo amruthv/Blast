@@ -6,17 +6,9 @@ import json
 import urllib
 from geopy import geocoders,distance
 import urllib2
-import httplib
-from BeautifulSoup import BeautifulSoup
 import os
-from collections import defaultdict
-try:
-    import cPickle as pickle
-except ImportError:
-    import pickle # fall back on Python version
 import sqlite3 as lite
 import datetime
-import opml
 import simplejson
 
 

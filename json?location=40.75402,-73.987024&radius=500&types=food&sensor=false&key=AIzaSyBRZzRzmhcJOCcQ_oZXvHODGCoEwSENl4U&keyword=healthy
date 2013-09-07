@@ -1,0 +1,447 @@
+{
+   "debug_info" : [],
+   "html_attributions" : [],
+   "next_page_token" : "CmRWAAAAzhQV_rKPrHT_x_-2vW_8CqjiOpcrknMBQBBnjT2-dpyUIsdSskWrwL5qEkrEAh87ee62QTJMrW-cHJ_5A6uOowXuoOe3yWVbtGB20MPZLqgRL9jNzphjM6v4bMtsF0xXEhBHW4vTdbB223JRK_AClvzPGhR0c3oh4C0z8nMxltrUQt5ZiiXy_w",
+   "results" : [
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 40.755151,
+               "lng" : -73.98641600000001
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+         "id" : "d65801348ec3c768de38556ea8b79a55c7cec103",
+         "name" : "Chop't Creative Salad Company",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "price_level" : 1,
+         "rating" : 3,
+         "reference" : "CoQBewAAAMHDMk_W6X0kFAsC2XfeMYFYFHu1TSfVSZzM3NWtSdWtgN2bQtMmHbYzmQdAXh47v6b7XKtopRF6coWQUD7ffvKnFgLAZm7SoAfETa9xTYhz185phPPmXVGhhNblcIwBq73WNAlBx7IRoVs36pz2AbI-k8oAxN7h9mMohijwuChTEhDxRrfpQzcTJO6d5JlvnV9HGhTKtwYkI0ujX0uP0XqTtbv0U-GXMQ",
+         "types" : [ "store", "restaurant", "food", "establishment" ],
+         "vicinity" : "1460 Broadway, New York"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 40.752655,
+               "lng" : -73.986733
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+         "id" : "59f9ecf272a9dcfd98ceff639f7f148b4b8c6b1a",
+         "name" : "Fuel Grill & Juice Bar",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "price_level" : 1,
+         "rating" : 3.5,
+         "reference" : "CoQBdQAAAMhC4vS1QtnwZyiLdKWxY8UGD8YIpV-SmF_EtIQCccS_hK64hLwvGpNNrm2oZlPHbj4WdW0-Ag2AVeMs6ceID0xPs4165E5aCMiZnbXNlGe6iWkX5QSkcEisO4ss9Qeag6uLhbrN-5psyNzJO14J1RVj47iULPH2sjLKHZduieUvEhAKaoVm4bKNJbuDfQEMCqbsGhSgi8VQjy6PowegWWUHE-K_D2dzTg",
+         "types" : [ "meal_takeaway", "restaurant", "food", "establishment" ],
+         "vicinity" : "112 West 38th Street, New York"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 40.754049,
+               "lng" : -73.98860999999999
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+         "id" : "add5d2681a1a5d26410001fc1b971d131c03a695",
+         "name" : "Pret A Manger",
+         "opening_hours" : {
+            "open_now" : false
+         },
+         "price_level" : 1,
+         "rating" : 3.5,
+         "reference" : "CnRrAAAAETqTAIdJ4Sw_wIZTpkwytezBfi0JRiKYtHBXLjnjSPQxMeLMxqgSsK97m6M58RG6_RD4z8rvzyXF8HUM6ezJ_BXx-oENGj3fr1NyB34JoDeVCCVyMhyhXG9DbmSDMXW-LQ4oXpHnSKKCX7D3dfEhnxIQX3WccuXuCB7N0iMUFUvD4hoUnidfDQSquUywU1eB8Emi9LxQT14",
+         "types" : [ "meal_takeaway", "restaurant", "food", "establishment" ],
+         "vicinity" : "530 7th Avenue, New York"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 40.75336,
+               "lng" : -73.98869500000001
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+         "id" : "eb0255181289f59a16ac8488f16557bc7ee31ef5",
+         "name" : "Health King",
+         "photos" : [
+            {
+               "height" : 912,
+               "html_attributions" : [
+                  "\u003ca href=\"https://plus.google.com/109170413890541430011\"\u003eWalkereighteen NYC\u003c/a\u003e"
+               ],
+               "photo_reference" : "CnRoAAAAVViC9jB9Ow0QmjHUbotWGe3lIYw5X3_s4ax-_nTdnuwaii11CICX3dM6xXvzcoUJRvameWVFDsPjy_p0REdNZFWLmEUcnD6-_kitb8Emcdn1_k_fYj9IT7GQmXLiSR_2uacoHVVxDyFKxv4krXuz9BIQuk46433ohzojQpeNsSPn3xoUNt5bqac7gc3QilXtOB_NIqE9k0E",
+               "width" : 1371
+            }
+         ],
+         "price_level" : 1,
+         "reference" : "CnRpAAAA6Mw7ReDYtmuDHcIfxFNOJuDOn0iD5W1rRWx1wEtezZgZ_BX-sAp8BeBxPxkr9vh5bFu28542mnhnvpfyod65niOK9g9IH9pd23KDGfpOjEuZvymh_V096L64zIUXeVPwlnqSava9JxSd3fT-ya3Y0xIQd8_8QJMJRYJLQ2f9tsfwBhoUGLMHOGQhPAWrUSUBI53EtB5hQPc",
+         "types" : [ "health", "grocery_or_supermarket", "food", "store", "establishment" ],
+         "vicinity" : "526 Fashion Avenue, New York"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 40.754614,
+               "lng" : -73.985854
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+         "id" : "ba697ab36492de5ec67526707ce4b507bc98a91f",
+         "name" : "SUBWAY® Restaurants",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "price_level" : 1,
+         "reference" : "CoQBcgAAABZ79o_oGwCHsGugtO7ajm_Ikw0TxlSUyxr0ohQ50ZcHYxAZWchqeCqYAOSyG4ZZVfI6eAg0ST8GgFo4iPliUTFRnoy5Q4zJ3756j0PWJVvBLOf6kH5ZCvcysdqr81TOlC_iRVOLiXIVvkUPfE0FZgkdjR9gqCKfHywDeNN-34XYEhDjO1mUcjX9628FDHfsiFKjGhSbGEdjyIHA0oedWU9K09m7GgwYoA",
+         "types" : [ "meal_takeaway", "restaurant", "food", "establishment" ],
+         "vicinity" : "126 West 41st Street, New York"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 40.752477,
+               "lng" : -73.98842999999999
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+         "id" : "b7606ec04056746fb362658ab875bccc8492b5cb",
+         "name" : "Just Salad",
+         "opening_hours" : {
+            "open_now" : false
+         },
+         "price_level" : 2,
+         "rating" : 4,
+         "reference" : "CnRoAAAAvMxLe2w5fg3x447Ew7JSd_gvq8j_3k7PEZppmRI7eZACjkyyk8IrsGnO_ZJhJtRFA664NBW1rbjtd_lUPOjz2y0-E640wydRsqta2MIr4X31GzdwXgsp7JpSQZBoStXOPavRopOyEHm3iYiecRUA8xIQ_QQAuFgXB6LTJLTvL5KkthoUlbvmRAwp0X32cFaCHgALkprXUo8",
+         "types" : [ "store", "restaurant", "food", "establishment" ],
+         "vicinity" : "134 West 37th Street, New York"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 40.75266,
+               "lng" : -73.984505
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+         "id" : "f38d8b782bd45c56a21ce518947df08c2ba4839e",
+         "name" : "Mangia Organics",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 547,
+               "html_attributions" : [],
+               "photo_reference" : "CoQBcQAAAEV-VafuZuEsyIh84AFf5hTybPDpLqQ2UbVgxuk2FAEJLeMo3Co7TOTSCxk-FmxDFcge4XRUiLYsx7Kmx0ENHLurDpYo9fRBzUg2BaItrTAXzoI2VcxD9e-vHiX67T-ZRKhRdDK4JvsuPILljV7bfdzAp9Rc-w7HgK40itKYicnOEhD3r15eZV50l0nlXYsZh9b8GhQv7ytVCHIl4Axro4Hahq2n4sCLPg",
+               "width" : 729
+            }
+         ],
+         "price_level" : 2,
+         "rating" : 4,
+         "reference" : "CnRuAAAAHhKyYXTxAP9MnepCvLryUPlKSC0OGPV-mRCBPsM8tlXJvcKZFQ5ipOoqpuxme5WuSJ_AVWYGwMdHn4pRc5ojLdTJlDg7HugBhbNJrgwLEcNVWOwmSiQ4OnRc9aUENY9B4JhGxgALsZ-xkIcu9epokBIQ0WafZofTq0A8WXqg8kr9AxoUe9pnJrOjOZoKdWDdVpRhdQWuGH0",
+         "types" : [ "restaurant", "food", "establishment" ],
+         "vicinity" : "45 West 39th Street, New York"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 40.752278,
+               "lng" : -73.98586
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+         "id" : "ad0ad92de63f584f5499b5d0c022ea9f9a687804",
+         "name" : "Pret A Manger",
+         "opening_hours" : {
+            "open_now" : false
+         },
+         "price_level" : 1,
+         "reference" : "CnRrAAAA6KYXrOfyI_pT4fl4pprPZDtdM1CE6zaDAYZlghRLHgY-rE8E4ElkVrlIG9LrOk42f_T0y23F16dFgW6iowAySGSHWXJTkaleIL18ZAKoCIY2vv0nNkoMmZnOMlWDaTNSblfrX_1mkfqN1jIyaW_mKhIQ2ecvfBYV6JAG6MlJmtIpvhoU5jHp5o6q1QVkxglQbiw4PwW20ok",
+         "types" : [
+            "bakery",
+            "store",
+            "meal_takeaway",
+            "restaurant",
+            "establishment",
+            "food"
+         ],
+         "vicinity" : "1020 6th Avenue, New York"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 40.757401,
+               "lng" : -73.98788500000001
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+         "id" : "a50889e558720c8cbb5e051dd373bc85d29378ad",
+         "name" : "Green Symphony",
+         "opening_hours" : {
+            "open_now" : false
+         },
+         "photos" : [
+            {
+               "height" : 648,
+               "html_attributions" : [
+                  "\u003ca href=\"https://plus.google.com/109170413890541430011\"\u003eWalkereighteen NYC\u003c/a\u003e"
+               ],
+               "photo_reference" : "CnRoAAAAuYf7cP1_VXz7-y87-GC3VPapkq9xjKzMI7GUbhI-DaYd_aFQos7TzAMnStZPib6vOjzHqvuJRVQXpC-CHSaGuIYn9Gro0w4mPnio9qLc9SYaDqEUvIVa3v5LJmDWDyO_Q7ngEdpGpoRsesI88QhvsBIQlXXCbmF-EOFXPB5hYeSudxoU1LCUIRuTypn9phu-11JOg4NrdnA",
+               "width" : 607
+            }
+         ],
+         "price_level" : 1,
+         "rating" : 4.2,
+         "reference" : "CnRtAAAAzCC0bWw-gnDp_pzvZerFR97u752ZJ2TOQAOOc0u5QGEgBH50zfJgBy2voIOpsxmERl0GXNnteBFJ_cJlZDTkHjQl8VqQSa30DLTQwPLUqN6mLpiTLZtfrArLzEQRzMeq85GlmbvyVrG0bmv8_W8-6RIQcs8yqQxmDsc-HEgycRuBUBoUPe_tNXlDraBvGBX1FDOZAhGR88o",
+         "types" : [ "restaurant", "food", "establishment" ],
+         "vicinity" : "255 West 43rd Street, New York"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 40.751284,
+               "lng" : -73.980231
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+         "id" : "8ecc5516a0ffbf33a67400ffe5dfcf9277a1415a",
+         "name" : "Dig Inn Seasonal Market",
+         "opening_hours" : {
+            "open_now" : false
+         },
+         "photos" : [
+            {
+               "height" : 100,
+               "html_attributions" : [],
+               "photo_reference" : "CmRWAAAAqZF1EKdYWNoGk0pXyyyazVWgTeqOxEhnn4zexfyVJ4yzqcHyQvNZ9GxKbyXy2Gc0zwH3CiaQr-FFNUWBjbpmam5x0NNw2mYb_knhnOh8SBUPbQL6K6lJC-_zbuT31Et_EhA51Np8S1x-1ZmZyIaqmLOQGhQfi0nvSBtArfQZwd-W4vhZQ4v-hQ",
+               "width" : 240
+            }
+         ],
+         "price_level" : 1,
+         "rating" : 3.3,
+         "reference" : "CoQBdQAAAO2lRCkK7HVeT8hvmjqEa4AJCWJBrqdE0_o3IxnkGjDIbBhs4Bjg4TClQQHYnjXi26bv2LohbP3HoF44V7XdkMiPlO_HpVYBQYZ9scGpz9SohEtbnkFOChHs4EXUTE-tCvw9_tGsCDyfQ8uvUVGBZW3M6A9HVLEafbJ1xP0ffwiLEhA5n5ZLTPKrl5zWLZvOKUfoGhRnj7YA-w38n5w9IycCohXFN0qk2A",
+         "types" : [ "restaurant", "meal_delivery", "food", "establishment" ],
+         "vicinity" : "275 Madison Avenue, New York"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 40.759629,
+               "lng" : -73.984505
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+         "id" : "2ab35ed3400686c1c7a35b717bc1aaeda0c83dfe",
+         "name" : "Jamba Juice",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "price_level" : 1,
+         "rating" : 4.1,
+         "reference" : "CnRqAAAArDpp94Gq9tne4a02TNzbo5Bj9dxMcICKNAH4vMWEhKxl9VBKOk4BhGqtXogbXs8dgpuIgqn5ztLojJqCfOcXtl2dIjCSUXYZhK6-W913v4jKR8oUiZkavAI5lmoKvOc5tZxlj38gNvETdvpXD3GN2hIQwEKgOP76o8sL7cydtD-kURoU16rYh1vOsku__xg9XDURET55MX0",
+         "types" : [ "store", "food", "establishment" ],
+         "vicinity" : "712 7th Avenue, New York"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 40.754505,
+               "lng" : -73.992186
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+         "id" : "803f9176ce252f3b2da9012495e4cc80ca312226",
+         "name" : "Healthy Living Ventures",
+         "photos" : [
+            {
+               "height" : 1024,
+               "html_attributions" : [],
+               "photo_reference" : "CoQBeQAAAHsuQWoa2dsPvzUXbtC-JaOJ6VYGWxhAbe-FBySR6xl48tHZcznCU9RTx-3OxcTNtZn1D62EkBmF20_FOUJAMZ-kcYcjQvk5NBHHzaTbDF4aq9eO1JlAaDXTAXUBL2mlKh-ysVrG9Azv2U13721BfjdCyMz6qtCTcPvIxBYLAiCIEhAoeu1GRnL30mzjHb4spkNLGhQmqeRsDRm5EpVjFziainuZ-aoxQQ",
+               "width" : 1536
+            }
+         ],
+         "reference" : "CoQBdgAAAIHj0wdKMu6L6dhkQcOYMgY2gTSFvJz5PO3q_6KKtJBwVXhMGRSdKP7RjfK6TtJwmbNBx42wx9tcrr101aK8smSfKD2CPxupW4ZiBz7vmMcjTT3yb2gWqT5emkIct66SKiHzJ1rsEutyGX11iU4-OrCzEAYt2xjTmzKr1xTXmUiqEhBmLf7z5n79SApfFY3WpShHGhQQZ3P-cIBlbaL4H6K5JkZawhQ2iQ",
+         "types" : [ "food", "establishment" ],
+         "vicinity" : "545 8th Avenue #401, New York"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 40.753913,
+               "lng" : -73.98153600000001
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+         "id" : "759658d83470ed18e25ff7103767bd46dbceacb4",
+         "name" : "Jamba Juice",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "price_level" : 1,
+         "rating" : 3.7,
+         "reference" : "CnRpAAAAq5D40gjnoEwl0ExD0_Qst8SxflHd21NlBVgaT3K6ojn0nNN9PaaVL5c10EM_1JPV6ZzmzBle6T4MBvb_hmi7V1xF_SRb-Nht2tfkCUXu6XX71F3EKgvHyw1O64Wd6irg0y9-RPW46RRjIorAOcwtBRIQGqa2i64YIFT3F_jmYl5hDBoUEdQ9nNvr-ILewLvSZeCo28PS_3k",
+         "types" : [ "food", "establishment" ],
+         "vicinity" : "9 West 42nd Street, New York"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 40.751683,
+               "lng" : -73.98029200000001
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+         "id" : "afa2c42c8223ccaf266bff9dbd9a51e97dcc46fe",
+         "name" : "4food",
+         "opening_hours" : {
+            "open_now" : false
+         },
+         "photos" : [
+            {
+               "height" : 701,
+               "html_attributions" : [],
+               "photo_reference" : "CnRmAAAAw6RlKMkWKnffluorxWO2E8s563nZtGkavZLmfYbEVlpZ02bxsk_WBoFt4OiJq_AeZMfo1uNnxs5Lne5-7X6QN20N79WXJCN-uj0bdK7wYi5uj7vbDWbssPWx10qwCNLCyOJJGeZldy9r5ABWW8ONERIQlkw40LONkbdFDObF5Mr0gxoUItD8nvOfNxJ_5k1xoGw-E3Ko8V4",
+               "width" : 1024
+            }
+         ],
+         "price_level" : 2,
+         "rating" : 3.9,
+         "reference" : "CnRjAAAA7KnJM4O8zdU3Dy9BEJcE6oJHhWBcxbzvCABVQS7OF5gkDxh-cXnDAFVDRrkfjIORpv48NeEYShzaQ78WdYUEc1xifjhuc30-I7xi5FpLnHfXopGUp5jhRcZMhXYEXeDyNOOTznqx0kqKCTT3v9D4hRIQDcrfF82Dr1OfDImX-1sJORoUT30rcl6FuqwArFO1_y0IFJZyUpo",
+         "types" : [ "restaurant", "food", "establishment" ],
+         "vicinity" : "286 Madison Avenue, New York"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 40.751179,
+               "lng" : -73.979631
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/fitness-71.png",
+         "id" : "38a556e8e1b0d93a018d8433374b2e296e50904d",
+         "name" : "Midtown Diet Center NYC - Best Weight Loss Program",
+         "photos" : [
+            {
+               "height" : 236,
+               "html_attributions" : [],
+               "photo_reference" : "CnRnAAAAz9ud9l3bgGOoC1wqZzpF5xRqXlHhOyxnYsCsV8IxQFF3mng8HcsRfxThlGanIbMHrf1AQJ6vLBg5aIOZsFzUjiTrP6O0z9W-39Xc_5NJUJnx1Mg9qoJxWrvc3V68MbizS1-jADFkoBYCOT-isQ8M6xIQAHeHJan4_j8tZhyqeNqBEBoUL6Vpl2UdYPyT91PiwUW4VxrAh50",
+               "width" : 268
+            }
+         ],
+         "reference" : "CqQBkgAAAGOwEZqdvYg6j9r-W5khNAeh7CiCdsfoEOASpzvC42hMIzf966mRQq7Y0zVqJWD8Yguy-uvmPJAnuKeKIQTUrktSCrgaNDRrjBr0uOg8ImObfWHcQmJnIl2jjuJomj7c6v-5czIeiTk7Ul-qpdf9VW3R_iRHxoCL0ykkFqIrky-1SYtk5feTD3RT1YrK6e6pb4okdj2MoJkaQm4Qr5J62jwSEI4g95ZxpIbvFKIFm5FJLgoaFPB4FPtuK1Sv00chQMGrru_jocm8",
+         "types" : [
+            "gym",
+            "health",
+            "grocery_or_supermarket",
+            "food",
+            "store",
+            "establishment"
+         ],
+         "vicinity" : "30 East 40th Street #307, New York"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 40.758868,
+               "lng" : -73.98880800000001
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+         "id" : "cdc74d72533457f7323bf3183451f1614e7133ab",
+         "name" : "SUBWAY® Restaurants",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "price_level" : 1,
+         "reference" : "CoQBcwAAAJmG0OIITchBQjUPzVzB0yJaxYdoW7nSua3wrzIZrG7S6vXjTEQQ5_7Oy8rBdeNLkoVVb3kGgG_LZuoYe-Z0H6G2hO7ByGDNypvWbW_iItZ2H3gCr0YDpi7vc7koPKVl95aL0Qu5SrqauIRWS6bgYuGAyWKuUrIDM3bey3wSuOneEhBQi027thusyaSM4_6S2P3vGhT2jJ3L9QqSzTNDdE5ua2em1KX7jQ",
+         "types" : [ "meal_takeaway", "restaurant", "food", "establishment" ],
+         "vicinity" : "705 8th Avenue, New York"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 40.747914,
+               "lng" : -73.992661
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+         "id" : "b8e1dda504742c178d5030f8bea953b694f1cc26",
+         "name" : "Healthy Choice Gourmet Deli",
+         "price_level" : 1,
+         "reference" : "CoQBeQAAAE3Tt5adTxaNQ_ehIPQTH1L9wE-LvFSMitl9ysMub0XOeJB93uFoyIk8lWX_NKn5t5rREAV6dak3qdzPwsjb8U0OF4ZrzcrIG0SF76Hs3E17KE_kk9U_9P6s7YaQcbwZMD1FwtAiThoudgL7FTL8d4zPUxEfW8eDOXuCkvBdlokOEhCSJN4F6nrs6MRuZVTk10NMGhQ69uegLZRimnh6MRZ2_ECw1YY8zg",
+         "types" : [ "store", "meal_takeaway", "restaurant", "food", "establishment" ],
+         "vicinity" : "341 7th Avenue, New York"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 40.7569,
+               "lng" : -73.99025399999999
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/generic_business-71.png",
+         "id" : "2e2ac34c94db466dd764b42cd7f959f1d8b98fe4",
+         "name" : "Jamba Juice",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "price_level" : 1,
+         "reference" : "CnRqAAAAoo5HBTw1DJ8b4bIGrMnCc7w2HHnQgV8EdhBq4g-f1VW4SZ3YyJYz8dzlWnEXAvafRMROH5L5MxwRbvp9nRk0t6bTrffSWtK43y85jsVmYREfKV4W9souIpAfhXeZ_Sw0SHbGv0eshXT0DoxDF5zlJhIQXqUOnUbPnuhsZ-BjyqFAyxoUpzo7FUbvfaDMHzZ0pm34CCdAOSQ",
+         "types" : [ "food", "establishment" ],
+         "vicinity" : "625 8th Avenue, New York"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 40.758993,
+               "lng" : -73.979792
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+         "id" : "d2ff5c3f72c62708c64712310fa3ea897fcc7894",
+         "name" : "Just Salad",
+         "opening_hours" : {
+            "open_now" : false
+         },
+         "price_level" : 1,
+         "rating" : 3.8,
+         "reference" : "CnRoAAAAuVSuGbU-oDGA3pdPeUfHUapJF0f34q5lDib7RfqV1TXdB-3ySXUy-VqAn60P8r4bQL-n5xdOIRq5e2pCpD5anZcnMOFwFJMQKBiIDDaoSptC6PPHedMhHO2w_mxQvrdqsBot3HwHp6t4r_NptQHSyhIQN5y82WszGr5WMnXeoNE-OBoUJyEwrolb5W7bOp-ZoUu30Y5o_5g",
+         "types" : [ "store", "restaurant", "food", "establishment" ],
+         "vicinity" : "30 Rockefeller Plaza, New York"
+      },
+      {
+         "geometry" : {
+            "location" : {
+               "lat" : 40.75326,
+               "lng" : -73.984554
+            }
+         },
+         "icon" : "http://maps.gstatic.com/mapfiles/place_api/icons/restaurant-71.png",
+         "id" : "20ebfb746bcbb60330067e033a46886ff15ef3d5",
+         "name" : "Le Pain Quotidien",
+         "opening_hours" : {
+            "open_now" : true
+         },
+         "photos" : [
+            {
+               "height" : 87,
+               "html_attributions" : [],
+               "photo_reference" : "CoQBdAAAAPQuwXhIZdX5DasjrBhlNRaU8Z0sz9KxlrMYE7vSDnysZstooj923TLuQF-pQ0D67OmFcYDtaVtEH7OM3Z4QzKuRwDW6nlCkl_tp9htUDC_6p-FG13QWiSCCt_7R3SzIP4CP9tIzl6HpI01klOkPIl1GGwOGcybRKoUhvgqQ9cD8EhBQOYeLrsI5RgqR8W3GqgsnGhSxkAxx9rsDjck1SMNGZeHInhn12A",
+               "width" : 120
+            }
+         ],
+         "price_level" : 2,
+         "reference" : "CnRvAAAApikoyyWythzEF8CS-g-AdVqY2Drf7iuSQeUgxWLxn86kGG5OJUxWj-u7jbVCmREljpg-r4mHA58-8opnMW8hc1NUpTs1QUEXGr2UCy4801alcru1HG4VnDI3ZxWGD7cwXdEDuQlKRsLdfD6cu3cl3hIQrrZhlS27K4Mv-QMIoNHUyBoUYdEU7dfQYbYR5nqykGIk0AAcjwQ",
+         "types" : [ "restaurant", "food", "establishment" ],
+         "vicinity" : "70 West 40th Street, New York"
+      }
+   ],
+   "status" : "OK"
+}

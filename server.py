@@ -37,7 +37,7 @@ class BlastHTTPRequestHandler(BaseHTTPServer.BaseHTTPRequestHandler):
             
 
 
-    def serve_data(self,data,type,size,encode=True):
+    def serve_data(self,data,type,size,encode=False):
         self.send_response(200)
         self.send_header('Content-Type',type);
         if 'Accept-Encoding' in self.headers and encode:
@@ -51,6 +51,7 @@ class BlastHTTPRequestHandler(BaseHTTPServer.BaseHTTPRequestHandler):
             self.send_header('Content-Encoding','gzip')
         self.send_header('Content-Length',str(size))
         self.end_headers()
+
         self.wfile.write(data)
         self.wfile.close()
 
@@ -69,16 +70,16 @@ class BlastHTTPRequestHandler(BaseHTTPServer.BaseHTTPRequestHandler):
                     self.serve_data(data,type,size)
 
             #Header for albumart
-            elif self.path.startswith('/getcontent/'):
-                data=self.path[12:]
+            elif self.path.startswith('/getcontent'):
+                data=self.path[11:]
                 location=data.split('/',2)
                 json=self.content_handler.build_json_file(self.content_handler.get_blastIDs(location))
                 type = self.get_type(".json") 
                 size = len(json)  
                 self.serve_data(json,type,size,encode=False)
 
-            elif self.path.startswith('/postcontent/'):
-                data=self.path[13:]
+            elif self.path.startswith('/postcontent'):
+                data=self.path[12:]
                 input=data.split('/',4)
                 print input
                 self.content_handler.add_to_database(input)

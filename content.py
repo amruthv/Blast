@@ -82,8 +82,13 @@ class ContentHandler:
         con=self.connect_to_database()
         cur = con.cursor()
         #cur.execute
-
-
+        cur.execute("SELECT BLASTID FROM BLASTS")
+        IDs=cur.fetchall()
+        real_ids = [num_pair[0] for num_pair in IDs]
+        print real_ids
+        for id in real_ids:
+            cur.execute("select GPS from BLASTS where BLASTID='"+str(id)+"'")
+            print cur.fetchone()[0]
         #distance=distance.distance(location,ge).mi
         return ['0001']
 
@@ -97,13 +102,13 @@ class ContentHandler:
         blasts=[]
         for ID in ID_list:
             cur.execute("select USERID from BLASTS where BLASTID='"+ID+"'")
-            blast_as_dict={'USERID':cur.fetchone()}
+            blast_as_dict={'USERID':cur.fetchone()[0]}
             cur.execute("select CONTENT from BLASTS where BLASTID='"+ID+"'")
-            blast_as_dict['CONTENT']=cur.fetchone()
+            blast_as_dict['CONTENT']=cur.fetchone()[0]
             cur.execute("select GPS from BLASTS where BLASTID='"+ID+"'")
-            blast_as_dict['GPS']=cur.fetchone()
+            blast_as_dict['GPS']=cur.fetchone()[0]
             cur.execute("select TIME from BLASTS where BLASTID='"+ID+"'")
-            blast_as_dict['TIME']=cur.fetchone()
+            blast_as_dict['TIME']=cur.fetchone()[0]
             blasts.append(blast_as_dict)
         
         return simplejson.dumps(blasts)

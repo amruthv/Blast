@@ -27,7 +27,7 @@ def load_config_data():
 if __name__ == "__main__":
     config=load_config_data();
     content_handler = content.ContentHandler(config['basedir'])
-    inventory_server = server.InventoryManagerServer(int(config['port']),content_handler,handler_class=server.BlastHTTPRequestHandler)
+    inventory_server = server.BlastManagerServer(int(config['port']),content_handler,handler_class=server.BlastHTTPRequestHandler)
 
 
 

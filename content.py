@@ -48,7 +48,7 @@ class ContentHandler:
     def build_database(self,basedir):
         con = self.connect_to_database()
         cur = con.cursor()    
-        cur.execute('DROP TABLE BLASTS')
+        #cur.execute('DROP TABLE BLASTS')
         cur.execute("CREATE TABLE IF NOT EXISTS BLASTS(BLASTID INTEGER PRIMARY KEY,USERID VARCHAR(5),CONTENT VARCHAR(50), GPS VARCHAR(50), TIME VARCHAR(20));")
         
         BLASTID='0001'

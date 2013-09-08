@@ -13,6 +13,7 @@ import pdb
 class BlastHTTPRequestHandler(BaseHTTPServer.BaseHTTPRequestHandler):
 
     def do_GET(self):
+        pdb.set_trace()
         arg_dict = urlparse.parse_qs(self.path)
         pdb.set_trace()
 

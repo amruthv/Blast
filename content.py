@@ -67,15 +67,15 @@ class ContentHandler:
         blasts=[]
         for ID in ID_list:
             cur.execute("select USERID from BLASTS where BLASTID='"+ID+"'")
-            blast_as_dict={'USERID':cur.fetchone()[0]}
+            blast_as_dict={'USERID':cur.fetchone()[0]}.replace('%20',' ').replace('%',' ')
             cur.execute("select CONTENT from BLASTS where BLASTID='"+ID+"'")
             blast_as_dict['CONTENT']=cur.fetchone()[0].replace('%20',' ').replace('%',' ')
             cur.execute("select GPS from BLASTS where BLASTID='"+ID+"'")
-            blast_as_dict['GPS']=cur.fetchone()[0]
+            blast_as_dict['GPS']=cur.fetchone()[0].replace('%20',' ').replace('%',' ')
             cur.execute("select LOCATION from BLASTS where BLASTID='"+ID+"'")
-            blast_as_dict['LOCATION']=cur.fetchone()[0]
+            blast_as_dict['LOCATION']=cur.fetchone()[0].replace('%20',' ').replace('%',' ')
             cur.execute("select TIME from BLASTS where BLASTID='"+ID+"'")
-            blast_as_dict['TIME']=cur.fetchone()[0]
+            blast_as_dict['TIME']=cur.fetchone()[0].replace('%20',' ').replace('%',' ')
             blasts.append(blast_as_dict)
         
         return simplejson.dumps(blasts)

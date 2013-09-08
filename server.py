@@ -70,7 +70,9 @@ class BlastHTTPRequestHandler(BaseHTTPServer.BaseHTTPRequestHandler):
 
             elif self.path.startswith('/getcontent'):
                 data = self.path[12:]
-                location = data.split('/',2)
+                location = data.split('&',2)
+                location[0]=location[0].replace('lat=','')
+                location[1]=location[1].replace('lon=','')
                 json = self.content_handler.build_json_file(self.content_handler.get_blastIDs(location))
                 type = self.get_type(".json") 
                 size = len(json)  
@@ -78,9 +80,15 @@ class BlastHTTPRequestHandler(BaseHTTPServer.BaseHTTPRequestHandler):
 
             elif self.path.startswith('/postcontent'):
                 data=self.path[13:]
-                input=data.split('/',4)
+                input=data.split('&',4)
+                input[0]=input[0].replace('userid=','')
+                input[1]=input[1].replace('content=','')
+                input[2]=input[2].replace('lat=','')
+                input[3]=input[3].replace('lon=','')
                 self.content_handler.add_to_database(input)
                 self.send_response(200)
+
+
 
             else:
                 res_path = os.path.join(webdir,self.path[1:])

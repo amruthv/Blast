@@ -104,7 +104,7 @@ class ContentHandler:
             cur.execute("select USERID from BLASTS where BLASTID='"+ID+"'")
             blast_as_dict={'USERID':cur.fetchone()[0]}
             cur.execute("select CONTENT from BLASTS where BLASTID='"+ID+"'")
-            blast_as_dict['CONTENT']=cur.fetchone()[0]
+            blast_as_dict['CONTENT']=cur.fetchone()[0].replace('%20',' ')
             cur.execute("select GPS from BLASTS where BLASTID='"+ID+"'")
             blast_as_dict['GPS']=cur.fetchone()[0]
             cur.execute("select TIME from BLASTS where BLASTID='"+ID+"'")

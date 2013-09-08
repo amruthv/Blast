@@ -83,6 +83,7 @@ class BlastHTTPRequestHandler(BaseHTTPServer.BaseHTTPRequestHandler):
                 input=data.split('/',4)
                 #print input
                 self.content_handler.add_to_database(input)
+                self.send_response(200)
 
                 #json=self.content_handler.build_json_file(self.content_handler.get_blastIDs(location))
                 #type = self.get_type(".json") 

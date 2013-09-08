@@ -67,7 +67,7 @@ class ContentHandler:
         blasts=[]
         for ID in ID_list:
             cur.execute("select USERID from BLASTS where BLASTID='"+ID+"'")
-            blast_as_dict={'USERID':cur.fetchone()[0]}.replace('%20',' ').replace('%',' ')
+            blast_as_dict={'USERID':cur.fetchone()[0].replace('%20',' ').replace('%',' ')}
             cur.execute("select CONTENT from BLASTS where BLASTID='"+ID+"'")
             blast_as_dict['CONTENT']=cur.fetchone()[0].replace('%20',' ').replace('%',' ')
             cur.execute("select GPS from BLASTS where BLASTID='"+ID+"'")

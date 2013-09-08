@@ -12,10 +12,10 @@ import pdb
 
 class BlastHTTPRequestHandler(BaseHTTPServer.BaseHTTPRequestHandler):
 
-    def do_GET(self):
-        pdb.set_trace()
-        arg_dict = urlparse.parse_qs(self.path)
-        pdb.set_trace()
+    # def do_GET(self):
+    #     pdb.set_trace()
+    #     arg_dict = urlparse.parse_qs(self.path)
+    #     pdb.set_trace()
 
     def get_type(self,path):
         ext = os.path.splitext(path)[1]
@@ -56,42 +56,42 @@ class BlastHTTPRequestHandler(BaseHTTPServer.BaseHTTPRequestHandler):
         self.wfile.write(data)
         self.wfile.close()
 
-    # def do_GET(self):
-    #     webdir = "www"
-    #     try:
+    def do_GET(self):
+        webdir = "www"
+        try:
 
-    #         if self.path == '/':
-    #             res_path = os.path.join(webdir,'index.html')
-    #             with open(res_path,'r') as f:
-    #                 data = f.read()
-    #                 type = self.get_type(res_path)
-    #                 size = len(data)
-    #                 self.serve_data(data,type,size)
+            if self.path == '/':
+                res_path = os.path.join(webdir,'index.html')
+                with open(res_path,'r') as f:
+                    data = f.read()
+                    type = self.get_type(res_path)
+                    size = len(data)
+                    self.serve_data(data,type,size)
 
-    #         elif self.path.startswith('/getcontent'):
-    #             data = self.path[12:]
-    #             location = data.split('/',2)
-    #             json = self.content_handler.build_json_file(self.content_handler.get_blastIDs(location))
-    #             type = self.get_type(".json") 
-    #             size = len(json)  
-    #             self.serve_data(json,type,size,encode=False)
+            elif self.path.startswith('/getcontent'):
+                data = self.path[12:]
+                location = data.split('/',2)
+                json = self.content_handler.build_json_file(self.content_handler.get_blastIDs(location))
+                type = self.get_type(".json") 
+                size = len(json)  
+                self.serve_data(json,type,size,encode=False)
 
-    #         elif self.path.startswith('/postcontent'):
-    #             data=self.path[13:]
-    #             input=data.split('/',4)
-    #             self.content_handler.add_to_database(input)
-    #             self.send_response(200)
+            elif self.path.startswith('/postcontent'):
+                data=self.path[13:]
+                input=data.split('/',4)
+                self.content_handler.add_to_database(input)
+                self.send_response(200)
 
-    #         else:
-    #             res_path = os.path.join(webdir,self.path[1:])
-    #             with open(res_path,'r') as f:
-    #                 data=f.read()
-    #                 type = self.get_type(res_path)
-    #                 size = len(data)
-    #                 self.serve_data(data,type,size)
-    #     except IOError as e:
-    #         print e
-    #         self.send_error(404, 'Content not found here: %s' % (self.path,))
+            else:
+                res_path = os.path.join(webdir,self.path[1:])
+                with open(res_path,'r') as f:
+                    data=f.read()
+                    type = self.get_type(res_path)
+                    size = len(data)
+                    self.serve_data(data,type,size)
+        except IOError as e:
+            print e
+            self.send_error(404, 'Content not found here: %s' % (self.path,))
 
 class BlastManagerServer:
     def __init__(self,port,content_handler,server_class=BaseHTTPServer.HTTPServer, handler_class=BaseHTTPServer.BaseHTTPRequestHandler):

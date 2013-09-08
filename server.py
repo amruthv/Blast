@@ -8,7 +8,6 @@ import urllib2
 import sys
 import threading
 
-
 class BlastHTTPRequestHandler(BaseHTTPServer.BaseHTTPRequestHandler):
 
     def get_type(self,path):
@@ -33,10 +32,6 @@ class BlastHTTPRequestHandler(BaseHTTPServer.BaseHTTPRequestHandler):
         else:
             return 'application/octet-stream'
 
-
-            
-
-
     def serve_data(self,data,type,size,encode=False):
         self.send_response(200)
         self.send_header('Content-Type',type);
@@ -55,12 +50,9 @@ class BlastHTTPRequestHandler(BaseHTTPServer.BaseHTTPRequestHandler):
         self.wfile.write(data)
         self.wfile.close()
 
-
-
     def do_GET(self):
         webdir = "www"
         try:
-            #Return root html file
             if self.path == '/':
                 res_path = os.path.join(webdir,'index.html')
                 with open(res_path,'r') as f:
@@ -69,7 +61,6 @@ class BlastHTTPRequestHandler(BaseHTTPServer.BaseHTTPRequestHandler):
                     size = len(data)
                     self.serve_data(data,type,size)
 
-            #Header for albumart
             elif self.path.startswith('/getcontent'):
                 data=self.path[12:]
                 location=data.split('/',2)
@@ -81,14 +72,8 @@ class BlastHTTPRequestHandler(BaseHTTPServer.BaseHTTPRequestHandler):
             elif self.path.startswith('/postcontent'):
                 data=self.path[13:]
                 input=data.split('/',4)
-                #print input
                 self.content_handler.add_to_database(input)
                 self.send_response(200)
-
-                #json=self.content_handler.build_json_file(self.content_handler.get_blastIDs(location))
-                #type = self.get_type(".json") 
-                #size = len(json)  
-                #self.serve_data(json,type,size,encode=False)
 
             else:
                 res_path = os.path.join(webdir,self.path[1:])
@@ -110,4 +95,3 @@ class BlastManagerServer:
             httpd.serve_forever()
         except RuntimeError:
             print 'Could not start server. Perhaps the content_handler wasn\'t registered?'
-#run(handler_class=My_Handler)

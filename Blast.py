@@ -21,15 +21,7 @@ def load_config_data():
     print config
     return config
 
-
-
-
 if __name__ == "__main__":
     config=load_config_data();
     content_handler = content.ContentHandler()
     inventory_server = server.BlastManagerServer(int(config['port']),content_handler,handler_class=server.BlastHTTPRequestHandler)
-
-
-
-
-

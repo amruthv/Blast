@@ -51,16 +51,16 @@ class ContentHandler:
         #cur.execute('DROP TABLE BLASTS')
         cur.execute("CREATE TABLE IF NOT EXISTS BLASTS(BLASTID INTEGER PRIMARY KEY,USERID VARCHAR(5),CONTENT VARCHAR(50), GPS VARCHAR(50), TIME VARCHAR(20));")
         
-        BLASTID='0001'
-        USERID='YAJIT'
-        CONTENT='EMERGENCY CAR ACCIDENT'
-        g=geocoders.GoogleV3()
-        _, ne = g.geocode('500 Memorial Drive, Cambridge, MA')
-        GPS=str(ne[0])+','+str(ne[1])
-        TIME=str(datetime.datetime.utcnow())
-        #print 'INSERT INTO BLASTS(BLASTID,USERID,CONTENT,GPS,TIME) VALUES('+"'"+BLASTID+"'"+','+"'"+USERID+"'"+','+"'"+CONTENT+"'"+','+"'"+GPS+"'"+','+"'"+TIME+"'"+');'
-        with con:
-            cur.execute('INSERT INTO BLASTS(USERID,CONTENT,GPS,TIME) VALUES('+"'"+USERID+"'"+','+"'"+CONTENT+"'"+','+"'"+GPS+"'"+','+"'"+TIME+"'"+');')
+        # BLASTID='0001'
+        # USERID='YAJIT'
+        # CONTENT='EMERGENCY CAR ACCIDENT'
+        # g=geocoders.GoogleV3()
+        # _, ne = g.geocode('500 Memorial Drive, Cambridge, MA')
+        # GPS=str(ne[0])+','+str(ne[1])
+        # TIME=str(datetime.datetime.utcnow())
+        # #print 'INSERT INTO BLASTS(BLASTID,USERID,CONTENT,GPS,TIME) VALUES('+"'"+BLASTID+"'"+','+"'"+USERID+"'"+','+"'"+CONTENT+"'"+','+"'"+GPS+"'"+','+"'"+TIME+"'"+');'
+        # with con:
+        #     cur.execute('INSERT INTO BLASTS(USERID,CONTENT,GPS,TIME) VALUES('+"'"+USERID+"'"+','+"'"+CONTENT+"'"+','+"'"+GPS+"'"+','+"'"+TIME+"'"+');')
 
         con.close()    
 

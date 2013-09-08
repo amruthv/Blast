@@ -15,9 +15,9 @@ import simplejson
 
 
 class ContentHandler:    
-    def __init__(self,basedir):
-        self.basedir = os.path.abspath(basedir)
-        self.build_database(basedir)
+    def __init__(self):
+        
+        self.build_database()
 
 
     def connect_to_database(self):
@@ -45,7 +45,7 @@ class ContentHandler:
         con.close()    
 
     
-    def build_database(self,basedir):
+    def build_database(self):
         con = self.connect_to_database()
         cur = con.cursor()    
         #cur.execute('DROP TABLE BLASTS')

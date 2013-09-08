@@ -35,7 +35,7 @@ class ContentHandler:
         LOCATION = str(Geocoder.reverse_geocode(float(input[2]),float(input[3]))[0])
         TIME = str(datetime.datetime.utcnow())
         with con:
-            cur.execute("INSERT INTO BLASTS(USERID,CONTENT,GPS,LOCATION,TIME) VALUES(\'%s\', \'%s\', \'%s\', \'%s\', \'%s\', \'%s\');" % (USERID, CONTENT, GPS, LOCATION, TIME))
+            cur.execute("INSERT INTO BLASTS(USERID,CONTENT,GPS,LOCATION,TIME) VALUES(\'%s\', \'%s\', \'%s\', \'%s\', \'%s\');" % (USERID, CONTENT, GPS, LOCATION, TIME))
         con.close()    
     
     def build_database(self):

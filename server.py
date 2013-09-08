@@ -79,9 +79,9 @@ class BlastHTTPRequestHandler(BaseHTTPServer.BaseHTTPRequestHandler):
                 self.serve_data(json,type,size,encode=False)
 
             elif self.path.startswith('/postcontent'):
-                data=self.path[12:]
+                data=self.path[13:]
                 input=data.split('/',4)
-                print input
+                #print input
                 self.content_handler.add_to_database(input)
 
                 #json=self.content_handler.build_json_file(self.content_handler.get_blastIDs(location))

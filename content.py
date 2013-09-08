@@ -79,6 +79,7 @@ class ContentHandler:
 
 
     def get_blastIDs(self,location):
+        ID_list=[]
         con=self.connect_to_database()
         cur = con.cursor()
         #cur.execute
@@ -88,9 +89,15 @@ class ContentHandler:
         print real_ids
         for id in real_ids:
             cur.execute("select GPS from BLASTS where BLASTID='"+str(id)+"'")
-            print cur.fetchone()[0]
-        #distance=distance.distance(location,ge).mi
-        return ['0001']
+            coords=cur.fetchone()[0].split(',',2)
+            # print 'location:' 
+            # print location
+            # print 'coords:'
+            # print coords
+            if distance.distance(location,coords).mi< 1.0:
+                ID_list.append(str(id))
+        print ID_list
+        return ID_list
 
 
     

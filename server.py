@@ -71,7 +71,7 @@ class BlastHTTPRequestHandler(BaseHTTPServer.BaseHTTPRequestHandler):
 
             #Header for albumart
             elif self.path.startswith('/getcontent'):
-                data=self.path[11:]
+                data=self.path[12:]
                 location=data.split('/',2)
                 json=self.content_handler.build_json_file(self.content_handler.get_blastIDs(location))
                 type = self.get_type(".json") 

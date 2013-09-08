@@ -49,7 +49,7 @@ class ContentHandler:
         cur = con.cursor()
         cur.execute("SELECT BLASTID FROM BLASTS")
         IDs = [num_pair[0] for num_pair in cur.fetchall()]
-        ID_list = []
+        ID_distance_list = []
         for ID in IDs:
             cur.execute("select GPS from BLASTS where BLASTID='%s'" % (str(ID)))
             coords = cur.fetchone()[0].split(',',2)
@@ -57,8 +57,8 @@ class ContentHandler:
                 ID_distance_list.append([str(ID),distance.distance(location,coords).mi])
         print ID_distance_list   
         sorted(ID_distance_list, key=lambda ID: ID[1])
-        print ID_list
-        return [num_pair[0] for num_pair in ID_list][:min([len(ID_list), 20])]
+        print ID_distance_list
+        return [num_pair[0] for num_pair in ID_distance_list][:min([len(ID_distance_list), 20])]
 
     def build_json_file(self,ID_list): 
         con=self.connect_to_database()

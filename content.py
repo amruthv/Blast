@@ -10,7 +10,7 @@ import os
 import sqlite3 as lite
 import datetime
 import simplejson
-
+from pygeocoder import Geocoder
 
 
 
@@ -38,9 +38,10 @@ class ContentHandler:
         USERID=input[0]
         CONTENT=input[1]
         GPS=input[2]+','+input[3]
+        LOCATION = Geocoder.reverse_geocode(float(input[2]),float(input[3]))[0]
         TIME=str(datetime.datetime.utcnow())
         with con:
-            cur.execute('INSERT INTO BLASTS(USERID,CONTENT,GPS,TIME) VALUES('+"'"+USERID+"'"+','+"'"+CONTENT+"'"+','+"'"+GPS+"'"+','+"'"+TIME+"'"+');')
+            cur.execute('INSERT INTO BLASTS(USERID,CONTENT,GPS,LOCATION,TIME) VALUES('+"'"+USERID+"'"+','+"'"+CONTENT+"'"+','+"'"+GPS+"'"+','+"'"+str(LOCATION)+"'"+','+"'"+TIME+"'"+');')
 
         con.close()    
 
@@ -49,7 +50,7 @@ class ContentHandler:
         con = self.connect_to_database()
         cur = con.cursor()    
         #cur.execute('DROP TABLE BLASTS')
-        cur.execute("CREATE TABLE IF NOT EXISTS BLASTS(BLASTID INTEGER PRIMARY KEY,USERID VARCHAR(5),CONTENT VARCHAR(50), GPS VARCHAR(50), TIME VARCHAR(20));")
+        cur.execute("CREATE TABLE IF NOT EXISTS BLASTS(BLASTID INTEGER PRIMARY KEY,USERID VARCHAR(20),CONTENT VARCHAR(50), GPS VARCHAR(100), LOCATION VARCHAR(100), TIME VARCHAR(20));")
         
         # BLASTID='0001'
         # USERID='YAJIT'
@@ -90,7 +91,7 @@ class ContentHandler:
         print ID_list   
         sorted(ID_list, key=lambda ID: ID[1])
         print ID_list
-        return [num_pair[0] for num_pair in ID_list]
+        return [num_pair[0] for num_pair in ID_list][:15]
 
 
     
@@ -107,6 +108,8 @@ class ContentHandler:
             blast_as_dict['CONTENT']=cur.fetchone()[0].replace('%20',' ').replace('%',' ')
             cur.execute("select GPS from BLASTS where BLASTID='"+ID+"'")
             blast_as_dict['GPS']=cur.fetchone()[0]
+            cur.execute("select LOCATION from BLASTS where BLASTID='"+ID+"'")
+            blast_as_dict['LOCATION']=cur.fetchone()[0]
             cur.execute("select TIME from BLASTS where BLASTID='"+ID+"'")
             blast_as_dict['TIME']=cur.fetchone()[0]
             blasts.append(blast_as_dict)

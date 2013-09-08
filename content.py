@@ -49,7 +49,6 @@ class ContentHandler:
         cur = con.cursor()
         cur.execute("SELECT BLASTID FROM BLASTS")
         IDs = [num_pair[0] for num_pair in cur.fetchall()]
-        print real_ids
         ID_list = []
         for ID in IDs:
             cur.execute("select GPS from BLASTS where BLASTID='%s'" % (str(ID)))

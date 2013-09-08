@@ -91,7 +91,7 @@ class ContentHandler:
         print ID_list   
         sorted(ID_list, key=lambda ID: ID[1])
         print ID_list
-        return [num_pair[0] for num_pair in ID_list][:15]
+        return [num_pair[0] for num_pair in ID_list]
 
 
     

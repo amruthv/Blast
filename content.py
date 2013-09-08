@@ -68,15 +68,6 @@ class ContentHandler:
 
             
 
-    def get_music_database(self,database_file):
-        #take database file and return its contents as string
-        if database_file=='local':
-            f=open('inventory_database.json','r')
-        else:
-            f=open(database_file,'r')
-        json_file=f.read()
-        return json_file
-
 
     def get_blastIDs(self,location):
         ID_list=[]
@@ -95,9 +86,11 @@ class ContentHandler:
             # print 'coords:'
             # print coords
             if distance.distance(location,coords).mi< 1.0:
-                ID_list.append(str(id))
+                ID_list.append([str(id),distance.distance(location,coords).mi])
+        print ID_list   
+        sorted(ID_list, key=lambda ID: ID[1])
         print ID_list
-        return ID_list
+        return [num_pair[0] for num_pair in ID_list]
 
 
     
